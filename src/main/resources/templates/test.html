@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+
+    <meta charset="UTF-8">
+    <title>小破站</title>
+    <script src="webjars/jquery/3.6.1/jquery.min.js"> </script>
+    <script type="text/javascript">
+        console.log("jiu")
+        alert("111")
+
+        function hhh() {
+            console.log("jiu")
+            $.ajax({
+                url: "/Stainfo",
+                type: "POST",
+                data: {
+                    "p":"123"
+                },
+
+                dataType: 'json',
+                success: function (data) {
+                    alert("666")
+                }
+            })
+        }
+    </script>
 </head>
+
 <body>
-$END$
+
+    <input type="button" id ="login" value = "login" onclick="hhh()">
+
+
 </body>
 </html>

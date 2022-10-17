@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    name: hhh
+    url: jdbc:mysql://localhost:3306/hhh?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC #url
+    username: root
+    password: B10921
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.springboot_test.bean
+server:
+  #端口号
+  port: 8089

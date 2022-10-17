@@ -3,7 +3,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
-public class UserBean {
+public class StainfoBean {
     private int id;
     private float power;
     private float temperature;
